@@ -1,101 +1,21 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Story by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Escribe una nueva tarea">
+        <button type="submit">Agregar</button>
+    </form>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    <ul id="taskList"></ul>
 
-				<!-- Banner -->
-				<section class="banner style2 orient-center content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right" id="zero">
-					<div class="content">
-						<h1>Recomendaciones</h1>
-						<p class="major">Este sitio web tratara sobre recomendaciones de videjuegos, ya sea para consolas o para moviles. Desde aventuras sorprendentes hasta juegos de estrategia.</p>
-						<p>Estas recomendaciones son <strong>personales</strong> espero que sean de su agrado.</p>
-						<ul class="actions stacked">
-							<li><a href="#first" class="button large wide smooth-scroll-middle">Seguir leyendo</a></li>
-						</ul>
-					</div>
-					<div class="image">
-						<img src="images/FGOtitle.jpg" alt="" />
-					</div>
-				</section>
-
-			<!-- Spotlight -->
-				<section class="spotlight style1 invert orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-					<div class="content">
-						<h2>Xenoblade Chronicles</h2>
-						<p>La saga Xenoblade Chronicles es un juego de rol lanzado en 2010 para la consola Wii de Nintendo, actualmente ya esta remasterizada y disponible para Nintendo Switch. La historia comienza en un mundo vasto y fascinante, donde dos titanes, Bionis y Mechonis, dan vida a un conflicto épico entre humanos y máquinas. Si te gustan los juegos de mundo abierto, las batallas en tiempo real y la exploración, entonces este juego es para ti.</p>
-						<ul class="actions stacked">
-							<li><a href="#second" class="button smooth-scroll-middle">Leer más</a></li>
-						</ul>
-					</div>
-					<div class="image">
-						<img src="images/XC1.jpg" alt="" />
-					</div>
-				</section>
-
-				<!-- Three -->
-					<section class="spotlight style1 invert orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
-						<div class="content">
-							<h2>Ace Attorney</h2>
-							<p>La saga Ace Attorney es una emocionante serie de videojuegos de aventuras que combina la investigación criminal con el drama de los juicios, lanzado en 2001. la saga es su estilo visual, con un diseño artístico colorido y animaciones que dan vida a los personajes y sus personalidades únicas. Además, el sistema de juego desafía a los jugadores a pensar críticamente y resolver acertijos. La saga cuenta con 10 juegos, los tres primeros tratan de el joven abogado Phoenix Wright, ademas hay otros tres donde ahora se muestra a un nuevo abogado llamado Apollo Justice, en dos juegos eres un prosecutor y en los ultimos dos juegos se trata de un antepasado de Phoenix Wright llamado "Ryuunosuke Naruhodou". Estos Juegos son multiplataforma y estan disponibles para, PC, Xbox, Consolas de nintendo y tambien para celulares.</p>
-							<ul class="actions stacked">
-								<li><a href="#third" class="button smooth-scroll-middle">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/PWATT2.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- Four -->
-					<section class="spotlight style1 invert orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
-						<div class="content">
-							<h2>Fate/Grand Order</h2>
-							<p>Fate/Grand Order (FGO) es un popular juego de rol por turnos móvil basado en la aclamada franquicia Fate. Desde su lanzamiento, la narrativa, los personajes carismáticos y una jugabilidad profunda que combina elementos de estrategia y coleccionismo, es lo que principalmente atrae a los jugadores. En FGO, los jugadores asumen el papel de un "Master" que invoca poderosos héroes históricos y mitológicos tal como el "Rey Arturo" o incluso "Gilgamesh" conocidos como "Servants" para combatir en emocionantes batallas.</p>
-							<ul class="actions stacked">
-								<li><a href="#zero" class="button smooth-scroll-middle">Volver a inicio</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/FGO2.jpg" alt="" />
-						</div>
-					</section>
-
-			
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/Harondight" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
-							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="app.js"></script>
+</body>
 </html>
