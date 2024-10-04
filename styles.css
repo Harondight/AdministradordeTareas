@@ -1,112 +1,112 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1d1515;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    background-color: #c7b7b7; /* Color de fondo */
+    display: flex; /* Centra todo el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura de la pantalla completa */
+    margin: 0; /* Elimina los márgenes por defecto */
 }
 
 .container {
-    background-color: #e27510;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(237, 250, 125, 0.2);
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
+    background-color: #e27510; /* Fondo del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(237, 250, 125, 0.2); /* Sombra ligera */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    width: 90%; /* Ancho del contenedor en un 90% del viewport */
+    max-width: 400px; /* Máximo ancho para evitar que sea muy grande */
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #ffffff; /* Color del texto */
 }
 
 form {
-    display: flex;
-    margin-bottom: 20px;
+    display: flex; /* Flexbox para alinear el input y el botón en una fila */
+    margin-bottom: 20px; /* Espacio debajo del formulario */
 }
 
 input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border 0.3s;
+    flex: 1; /* Hace que el input ocupe el mayor espacio posible */
+    padding: 10px; /* Espacio interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: border 0.3s; /* Transición suave al enfocar */
 }
 
 input:focus {
-    border-color: #4b1dca;
-    outline: none;
+    border-color: #4b1dca; /* Cambia el color del borde al enfocar */
+    outline: none; /* Elimina el contorno de foco */
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Espacio interno */
+    background-color: #28a745; /* Color de fondo verde */
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s; /* Transición suave al hacer hover */
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Cambia el color de fondo al hacer hover */
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
 }
 
 li {
-    background-color: #dd1fb4;
-    padding: 10px;
-    margin: 5px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    transition: background-color 0.3s;
+    background-color: #dd1fb4; /* Fondo de cada elemento de lista */
+    padding: 10px; /* Espacio interno */
+    margin: 5px 0; /* Margen entre los elementos de la lista */
+    display: flex; /* Flexbox para alinear texto y botón de eliminar */
+    justify-content: space-between; /* Separa el texto del botón */
+    align-items: center; /* Centra el contenido verticalmente */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    transition: background-color 0.3s; /* Transición suave al hacer hover */
 }
 
 li:hover {
-    background-color: #105aa5;
+    background-color: #105aa5; /* Cambia el color de fondo al hacer hover */
 }
 
 .completed {
-    text-decoration: line-through;
-    color: rgb(239, 243, 20);
+    text-decoration: line-through; /* Línea sobre el texto para tareas completadas */
+    color: rgb(239, 243, 20); /* Color del texto tachado */
 }
 
 .delete-btn {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
+    background-color: #dc3545; /* Fondo rojo del botón de eliminar */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    padding: 5px 10px; /* Espacio interno */
+    transition: background-color 0.3s; /* Transición suave al hacer hover */
 }
 
 .delete-btn:hover {
-    background-color: #c82333;
+    background-color: #c82333; /* Color de fondo al hacer hover */
 }
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 10px; /* Añade padding en pantallas pequeñas */
     }
     
     .container {
-        padding: 15px;
-        width: 100%;
-        box-shadow: none;
-        border-radius: 0;
+        padding: 15px; /* Reduce el padding del contenedor */
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        box-shadow: none; /* Elimina la sombra para simplificar el diseño */
+        border-radius: 0; /* Bordes rectos para simplificar en pantallas pequeñas */
     }
 }

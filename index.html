@@ -2,19 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Etiqueta para definir el conjunto de caracteres en el documento (UTF-8) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el sitio sea responsivo, adaptándose a diferentes tamaños de pantalla -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Vincula la hoja de estilos CSS -->
     <title>Lista de Tareas</title>
+    <!-- Título de la página -->
 </head>
 <body>
+    <!-- Sección para mostrar instrucciones al usuario -->
+	<div class="instructions">
+		<h2>Instrucciones</h2>
+		<ul>
+			<li>Ingresa una tarea en el campo de texto y presiona "Agregar".</li>
+			<li>Haz clic en una tarea para marcarla como completada.</li>
+			<li>Para eliminar una tarea, presiona el botón "Eliminar" junto a la tarea.</li>
+		</ul>
+	</div>
+    <!-- Contenedor principal para la lista de tareas -->
     <div class="container">
         <h1>Lista de Tareas</h1>
+        <!-- Formulario para agregar nuevas tareas -->
         <form id="taskForm">
             <input type="text" id="taskInput" placeholder="Agregar nueva tarea..." required>
+            <!-- Campo de entrada de texto para la nueva tarea -->
             <button type="submit">Agregar</button>
+            <!-- Botón para enviar el formulario y agregar la tarea -->
         </form>
+        <!-- Lista desordenada (ul) que contendrá las tareas como elementos listados -->
         <ul id="taskList"></ul>
     </div>
+    <!-- Vinculación del archivo JavaScript que controla la lógica de la aplicación -->
     <script src="app.js"></script>
 </body>
 </html>
+
