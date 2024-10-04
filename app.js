@@ -14,7 +14,6 @@ taskForm.addEventListener('submit', function(event) {
     const li = document.createElement('li');
     li.textContent = taskText;
 
-    // Crear botón de eliminar
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Eliminar';
     deleteBtn.classList.add('delete-btn');
@@ -58,20 +57,18 @@ taskForm.addEventListener('submit', function(event) {
         });
     }
     
-    // Cargar tareas al inicio
     loadTasks();
     
-    // Guardar tareas al agregar o eliminar
     taskForm.addEventListener('submit', saveTasks);
     taskList.addEventListener('click', saveTasks);
-    
+
     taskList.addEventListener('click', function(event) {
         if (event.target.tagName === 'LI') {
             event.target.classList.toggle('completed');
-            saveTasks(); // Guardar el estado actualizado
+            saveTasks(); 
         }
     });
     
 
-    taskInput.value = ''; // Limpiar el campo de entrada
+    taskInput.value = ''; 
 });
